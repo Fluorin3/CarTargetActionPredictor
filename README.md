@@ -54,11 +54,11 @@ uvicorn main:app --reload
 | `device_browser` | `str` | Browser or app used to access the site | `Telegram` |
 | `brand` | `str` | Manufacturer brand of the device | `Apple` |
 
-> All items from the table are required \#everything
+> All items from the table are required \#every
 -----
 ```mermaid
 graph TD
   A[Start] --> B{Every item is in your request?}
   B --> |Yes| C[Run your API request] --> E[End]
-  B --> |No| D[Fill your request] --> B
+  B --> |No| D[/Fill your request/] --> B
 ```
