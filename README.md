@@ -58,7 +58,7 @@ uvicorn main:app --reload
 -----
 ```mermaid
 graph TD
-  A[Start] --> B{2>3}
-  B --> |Да| C[Действие]
-  B --> |Нет| D[Конец]
+  A[Start] --> B{Every item is in your request?}
+  B --> |Yes| C[Run your API request]
+  B --> |No| D[Fill your request] --> A
 ```
