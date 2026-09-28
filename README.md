@@ -33,3 +33,17 @@ uvicorn main:app --reload
 2. /metadata - meta-data output (GET).
 3. /predict - prediction. 0 - no target action is awaited. 1 - a target action is awaited (POST).
 4* /predict_proba - probability output (POST).
+
+# Requests' body
+
+| Field | Type | Description | Example |
+| :--- | :--- | :--- | :--- |
+| `visit_datetime` | `str` | Date and time of the visit (ISO 8601) | `2024-03-22 19:00:00` |
+| `visit_number` | `int` | Sequential identifier for the visit | `19` |
+| `geo_city` | `str` | City from which the visit originated | `Moscow` |
+| `utm_medium` | `str` | UTM medium — traffic source or channel | `referral` |
+| `device_category` | `str` | Category of the device used | `smartphone` |
+| `device_browser` | `str` | Browser or app used to access the site | `Telegram` |
+| `brand` | `str` | Manufacturer brand of the device | `Apple` |
+
+> All items from the table are required
