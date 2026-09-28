@@ -51,7 +51,7 @@ uvicorn main:app --reload
 | `geo_city` | `str` | City from which the visit originated | `Moscow` |
 | `utm_medium` | `str` | UTM medium — traffic source or channel | `referral` |
 | `device_category` | `str` | Category of the device used | `smartphone` |
-| `device_browser` | `str` | Browser or app used to access the site | `Telegram` |
+| `device_browser` | `str` | Browser or app used to access the site | `Chrome` |
 | `brand` | `str` | Manufacturer brand of the device | `Apple` |
 
 > All items from the table are required \#every
