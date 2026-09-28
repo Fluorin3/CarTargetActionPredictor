@@ -44,8 +44,6 @@ uvicorn main:app --reload
 
 ### Requests' body
 
-\# fdf
-
 | Field | Type | Description | Example |
 | :--- | :--- | :--- | :--- |
 | `visit_datetime` | `str` | Date and time of the visit (ISO 8601) | `2024-03-22 19:00:00` |
@@ -56,4 +54,11 @@ uvicorn main:app --reload
 | `device_browser` | `str` | Browser or app used to access the site | `Telegram` |
 | `brand` | `str` | Manufacturer brand of the device | `Apple` |
 
-> All items from the table are required
+> All items from the table are required \#everything
+-----
+```mermaid
+graph TD
+  A[Start] --> B{2>3}
+  B --> |Да| C[Действие]
+  B --> |Нет| D[Конец]
+```
