@@ -21,6 +21,8 @@ We also have an additional file with business notes about the model, which was c
 
 ### How to use API
 
+#### API instruments
+
 **For API running** use uvicorn
 ```bash
 pip install 'uvicorn[standard]'
@@ -33,12 +35,16 @@ uvicorn main:app --reload
 
 [![](https://nocodestartup.io/wp-content/uploads/2024/01/postman-nocode.webp)](https://www.postman.com/)
 
+#### API commands
+
 1. ***/status*** - status check. If u got 200, everything is up (GET).
 2. ***/metadata*** - meta-data output (GET).
 3. ***/predict*** - prediction. 0 - no target action is awaited. 1 - a target action is awaited (POST).
-4* ~~/predict_proba~~ - probability output (POST).
+4. ~~/predict_proba~~ - probability output (POST).
 
 ### Requests' body
+
+\# fdf
 
 | Field | Type | Description | Example |
 | :--- | :--- | :--- | :--- |
